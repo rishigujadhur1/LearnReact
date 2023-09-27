@@ -26,6 +26,7 @@ function App() {
   return (
     <div>
       <MyComponentWithNumbers />
+      <MyComponentWithProp name="Hello World!" />
     </div>
   );
 }
