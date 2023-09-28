@@ -10,7 +10,11 @@ function LogValue() {
 }
 
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <LogValue />
+    </div>
+  );
 }
 
 export default App;
