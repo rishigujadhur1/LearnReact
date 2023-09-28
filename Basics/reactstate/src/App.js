@@ -8,7 +8,15 @@ function FavoriteColor() {
 
 function Count() {
   const [myCounter, setCounter] = useState(1);
-  return <>{myCounter}</>;
+  return (
+    <>
+      <p>{myCounter}</p>
+      <button onClick={() => setCounter(5)}>Set to 5</button>
+      <button onClick={() => setCounter((prevCount) => prevCount + 1)}>
+        Add
+      </button>
+    </>
+  );
 }
 
 function App() {
