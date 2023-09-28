@@ -1,17 +1,27 @@
 import logo from "./logo.svg";
 import "./App.css";
 
-function MyComponent() {
+let MyComponent = () => {
   return <p>Hello World</p>;
-}
+};
 
-function MyComponentWithNumbers() {
+let MyComponentWithNumbers = () => {
   return <>Hello World {1 + 2}</>;
-}
+};
 
-function MyComponentWithProp(props) {
+let MyComponentWithProp = (props) => {
   return <>props.name</>;
-}
+};
+
+// Displaying multiple components
+let Car = () => {
+  return (
+    <>
+      <li>Brand: BMW</li>
+      <li>Year: 2023</li>
+    </>
+  );
+};
 
 function MyComponentWithDestructuredProps({ name, icon }) {
   return (
@@ -27,6 +37,7 @@ function App() {
     <div>
       <MyComponentWithNumbers />
       <MyComponentWithProp name="Hello World!" />
+      <Car />
     </div>
   );
 }

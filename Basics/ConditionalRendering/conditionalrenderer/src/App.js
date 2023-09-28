@@ -10,6 +10,7 @@ function App() {
   return (
     <>
       <Condition value="2" />
+	  <p>{1 + 1 === 2 ? "Correct" : "Incorrect"} </p>
     </>
   );
 }
