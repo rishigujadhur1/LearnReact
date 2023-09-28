@@ -37,6 +37,8 @@ function App() {
     <div>
       <MyComponentWithNumbers />
       <MyComponentWithProp name="Hello World!" />
+      <MyComponentWithProp name="Hello World!" />
+      <MyComponentWithProp name={1 + 1} />
       <Car />
     </div>
   );
