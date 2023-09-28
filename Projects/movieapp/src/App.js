@@ -34,8 +34,10 @@ function App() {
 
       {movies?.length > 0 ? (
         <div className="container">
-          {movies.map((movie) => (
-            <MovieSection movie={movie} />
+          {movies.map((movie, i) => (
+            <div key={i}>
+              <MovieSection movie={movie} />
+            </div>
           ))}
         </div>
       ) : (
