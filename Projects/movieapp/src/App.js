@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import MovieSection from "./app/Components/MovieSection";
-import NavbarSection from "./app/Components/NavbarSection";
-
+import MovieSection from "./app/components/MovieSection";
+import NavbarSection from "./app/components/NavbarSection";
+import Login from "./features/account/Login";
 // bs5 components
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
@@ -18,7 +18,6 @@ function App() {
     const response = await fetch(`${API_URL}&s=${title}`);
     const data = await response.json();
     setMovies(data.Search);
-    console.log(movies);
   };
 
   useEffect(() => {
@@ -31,6 +30,7 @@ function App() {
     <div data-bs-theme="dark" className="bg-dark">
       <NavbarSection />
       <Container className="mt-3">
+        <Login />
         <InputGroup className="mb-3">
           <Button varient="primary" onClick={() => searchMovies(searchTerm)}>
             Search

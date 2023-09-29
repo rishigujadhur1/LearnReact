@@ -7,9 +7,12 @@ const requests = {
 };
 
 const Account = {
-  login: (values) => requests.post("user/login", values),
-  register: (values) => requests.post("user/register", values),
-  currentUser: (values) => requests.get("user/currentUser", values),
+  login: (values) =>
+    requests.post("https://localhost:5006/api/user/login", values),
+  register: (values) =>
+    requests.post("https://localhost:5006/api/user/register", values),
+  currentUser: (values) =>
+    requests.get("https://localhost:5006/api/user/currentUser", values),
 };
 
 export default Account;
