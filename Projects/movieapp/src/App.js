@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import MovieSection from "./MovieSection";
-import NavbarSection from "./NavbarSection";
+import MovieSection from "./app/Components/MovieSection";
+import NavbarSection from "./app/Components/NavbarSection";
 
 // bs5 components
 import Button from "react-bootstrap/Button";
