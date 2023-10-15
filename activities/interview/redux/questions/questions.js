@@ -1,4 +1,4 @@
-// Question 1:
+// Q1:
 // Given the following Redux store and actions, what will be the state after the "INCREMENT" action is dispatched twice, followed by the "DECREMENT" action once?
 
 const initialState1 = 0;
